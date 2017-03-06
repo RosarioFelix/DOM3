@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <h1><font color ="#FF5733">Datos de Formulario </font></h1>
+
+	<form id="frm1">
+		Nombre: <input type="text" name="name" id="name"><p>
+		Email: <input type="text" name="email" id="email"><p>
+	</form>
+	<button onclick="myFunction()">Mostrar</button>
+
+    <font color = "#5A5251"><p id="mostrarNombre"></p></font>
+    <font color = "#5A5251"><p id="mostrarEmail"></p></font>
+
+	<script>
+		function myFunction() {
+
+      var nom = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      //mostrar
+      var muestranom = document.getElementById('mostrarNombre');
+      var muestraemail = document.getElementById('mostrarEmail');
+
+      muestranom.innerHTML = "El nombre es : " +nom;
+      muestraemail.innerHTML = "El E-mail es : " +email;
+		}
+	</script>
+</body>
+</html>
